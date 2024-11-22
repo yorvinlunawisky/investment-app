@@ -1,5 +1,4 @@
 import { Component, inject } from '@angular/core';
-import { NavbarComponent } from '../../../components/navbar/navbar/navbar.component';
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { IsLoadingService } from '../../../services/is-loading/is-loading.service';
 import { Investment } from '../../../shared/models/Investment';
@@ -13,7 +12,7 @@ import {
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [NavbarComponent, NgClass, NgIf, NgFor, ReactiveFormsModule],
+  imports: [NgClass, NgIf, NgFor, ReactiveFormsModule],
   templateUrl: './investments.component.html',
   styleUrl: './investments.component.scss',
 })

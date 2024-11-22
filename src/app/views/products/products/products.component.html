@@ -1,6 +1,5 @@
 <div class="min-h-screen bg-white py-6">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Header with Add Button -->
     <div class="mb-6 flex justify-between items-center">
       <div>
         <h1 class="text-2xl font-semibold text-gray-900">Products</h1>
@@ -28,7 +27,6 @@
       </button>
     </div>
 
-    <!-- Products Table -->
     <div class="bg-white shadow rounded-lg">
       <div class="overflow-x-auto">
         <table class="min-w-full divide-y divide-gray-200">
@@ -103,7 +101,6 @@
       </div>
     </div>
 
-    <!-- Modal -->
     <div
       *ngIf="isModalOpen"
       class="fixed z-10 inset-0 overflow-y-auto"
@@ -114,14 +111,12 @@
       <div
         class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
       >
-        <!-- Background overlay -->
         <div
           class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
           aria-hidden="true"
           (click)="closeModal()"
         ></div>
 
-        <!-- Modal panel -->
         <div
           class="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6"
         >
@@ -140,7 +135,6 @@
                   (ngSubmit)="onSubmit()"
                   class="space-y-6"
                 >
-                  <!-- Name Input -->
                   <div>
                     <label
                       for="name"
@@ -166,7 +160,6 @@
                     </div>
                   </div>
 
-                  <!-- Age Input -->
                   <div>
                     <label
                       for="age"
@@ -199,7 +192,6 @@
                     </div>
                   </div>
 
-                  <!-- Form Actions -->
                   <div class="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
                     <button
                       type="submit"

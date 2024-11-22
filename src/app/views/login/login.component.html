@@ -1,20 +1,17 @@
 <div
-  class="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+  class="min-h-screen bg-white flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
 >
   <div class="max-w-md w-full space-y-8 bg-white p-10 rounded-xl shadow-lg">
-    <!-- Header -->
     <div class="text-center">
       <h2 class="text-3xl font-bold text-gray-900">Welcome back</h2>
       <p class="mt-2 text-sm text-gray-600">Please sign in to your account</p>
     </div>
 
-    <!-- Login Form -->
     <form
       [formGroup]="loginFormGroup"
       (ngSubmit)="onSubmit()"
       class="mt-8 space-y-6"
     >
-      <!-- Email Input -->
       <div>
         <label for="email" class="block text-sm font-medium text-gray-700"
           >Email address</label
@@ -45,7 +42,6 @@
         </div>
       </div>
 
-      <!-- Password Input -->
       <div>
         <label for="password" class="block text-sm font-medium text-gray-700"
           >Password</label
@@ -76,28 +72,6 @@
         </div>
       </div>
 
-      <!-- Remember Me and Forgot Password -->
-      <!-- <div class="flex items-center justify-between">
-        <div class="flex items-center">
-          <input
-            id="remember-me"
-            type="checkbox"
-            formControlName="rememberMe"
-            class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-          />
-          <label for="remember-me" class="ml-2 block text-sm text-gray-900"
-            >Remember me</label
-          >
-        </div>
-
-        <div class="text-sm">
-          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"
-            >Forgot your password?</a
-          >
-        </div>
-      </div> -->
-
-      <!-- Submit Button -->
       <div>
         <button
           type="submit"
